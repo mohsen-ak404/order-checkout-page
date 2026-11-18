@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تکمیل اطلاعات سفارش</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./font.css" />
+  </head>
+  <body>
+    <main class="checkout">
+      <section class="checkout-form">
+        <h2 class="section-title">اطلاعات کاربری <span>شما</span></h2>
+
+        <h3 class="subsection-title">اطلاعات تحویل گیرنده</h3>
+
+        <div class="form-grid">
+          <div class="input-group">
+            <label for="receiver-name">نام و نام خانوادگی</label>
+            <input
+              type="text"
+              id="receiver-name"
+              name="receiver-name"
+              value="محسن آخوندی"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="receiver-phone">شماره تماس گیرنده</label>
+            <input
+              type="tel"
+              id="receiver-phone"
+              name="receiver-phone"
+              value="09120000000"
+            />
+          </div>
+        </div>
+
+        <div class="address-header">
+          <h3 class="subsection-title">آدرس تحویل</h3>
+          <button type="button" class="address-picker-btn">
+            <svg
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.75 5.75H5.75M5.75 5.75H10.75M5.75 5.75V10.75M5.75 5.75V0.75"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="currentColor"
+              />
+            </svg>
+            <span>انتخاب آدرس</span>
+          </button>
+        </div>
+
+        <div class="form-grid">
+          <div class="input-group">
+            <label for="province">استان</label>
+            <select id="province" name="province">
+              <option>تهران</option>
+              <option>کرج</option>
+              <option>کردستان</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="city">شهر</label>
+            <select id="city" name="city">
+              <option>اسلامشهر</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="house-number">پلاک</label>
+            <input
+              type="text"
+              id="house-number"
+              name="house-number"
+              value="۱۰"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="postal-code">کدپستی</label>
+            <input
+              type="text"
+              id="postal-code"
+              name="postal-code"
+              value="۳۲۱۲۵۶۳۷۴۹۰"
+            />
+          </div>
+
+          <div class="input-group full-width">
+            <label for="full-address">نشانی پستی</label>
+            <textarea id="full-address" name="full-address">
+تهران، خیابان ولیعصر، منطقه ۱۲، بلوار کاوه، کوچه ابوذر، پلاک ۱۵</textarea
+            >
+          </div>
+        </div>
+
+        <div class="shipping-header">
+          <h2 class="shipping-title">انتخاب <span>نحوه ارسال</span></h2>
+
+          <span class="cart-count-badge">۳ محصول در سبد خرید</span>
+        </div>
+
+        <div class="form-grid">
+          <label class="shipping-card">
+            <input type="radio" name="shipping" value="tipax" checked />
+            <div class="shipping-info">
+              <span class="shipping-check">
+                <svg
+                  viewBox="0 0 12 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 4.5L4.33333 8L11 1"
+                    stroke="white"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>تیپاکس با بیمه (۱ تا ۳ روز کاری)</span>
+            </div>
+            <div class="shipping-price">۴۵,۰۰۰ <span>تومان</span></div>
+          </label>
+
+          <label class="shipping-card">
+            <input type="radio" name="shipping" value="post-pishtaz" />
+            <div class="shipping-info">
+              <span class="shipping-check">
+                <svg
+                  viewBox="0 0 12 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 4.5L4.33333 8L11 1"
+                    stroke="white"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>پست پیشتاز (۲ تا ۵ روز کاری)</span>
+            </div>
+            <div class="shipping-price">۸۰,۰۰۰ <span>تومان</span></div>
+          </label>
+        </div>
+      </section>
+
+      <aside class="order-summary">
+        <h2 class="section-title">اطلاعات <span>خرید</span></h2>
+
+        <div class="cart-items">
+          <div class="cart-item">
+            <div class="cart-item-image">
+              <img
+                src="./assets/images/475e27a9dd671663eb2133230036d0356212741d.png"
+                alt="Hugo Just Different"
+              />
+            </div>
+
+            <div class="cart-item-details">
+              <div class="cart-item-header">
+                <div class="cart-item-names">
+                  <p class="cart-item-title">Hugo Just Different</p>
+                  <p class="cart-item-subtitle">هوگو بوس جاست دیفرنت</p>
+                </div>
+                <p class="cart-item-volume">۱۰۰ <span>میل</span></p>
+              </div>
+
+              <div class="cart-item-footer">
+                <p class="cart-item-price">۱,۵۵۰,۰۰۰ <span>تومان</span></p>
+
+                <div class="qty-controls">
+                  <button
+                    type="button"
+                    class="qty-btn qty-btn-increase"
+                    aria-label="افزایش تعداد"
+                  >
+                    <svg
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.6 4.6H8.6M4.6 8.6V0.6"
+                        stroke="#1A1814"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="qty-count">۱</span>
+
+                  <button
+                    type="button"
+                    class="qty-btn qty-btn-remove"
+                    aria-label="حذف از سبد خرید"
+                  >
+                    <svg
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.54182 0C7.16619 0 5.93149 0.901026 5.53369 2.22704L5.51645 2.28449C4.19809 2.43154 2.88783 2.675 1.59627 3.01488L0.466095 3.3123C0.132282 3.40014 -0.0671137 3.74197 0.0207317 4.07578C0.108577 4.40959 0.450399 4.60899 0.784212 4.52114L1.91439 4.22373C6.25872 3.08048 10.8249 3.08048 15.1692 4.22373L16.2994 4.52114C16.6332 4.60899 16.9751 4.40959 17.0629 4.07578C17.1508 3.74197 16.9514 3.40014 16.6175 3.3123L15.4874 3.01488C14.1958 2.675 12.8855 2.43154 11.5672 2.28449L11.55 2.22704C11.1521 0.901026 9.91745 0 8.54182 0ZM10.1658 2.16465C9.83074 1.60903 9.21601 1.25 8.54182 1.25C7.86763 1.25 7.2529 1.60903 6.91783 2.16465C7.99952 2.10017 9.08412 2.10017 10.1658 2.16465Z"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        fill="#CC312D"
+                      />
+                      <path
+                        d="M1.79744 4.96335C2.13994 4.92043 2.45238 5.16328 2.4953 5.50578L3.60986 14.4C3.72741 15.338 4.52493 16.0418 5.47031 16.0418H11.6133C12.5587 16.0418 13.3562 15.338 13.4738 14.4L14.5883 5.50578C14.6313 5.16328 14.9437 4.92043 15.2862 4.96335C15.6287 5.00627 15.8716 5.31871 15.8286 5.66121L14.7141 14.5554C14.5182 16.1188 13.189 17.2918 11.6133 17.2918H5.47031C3.89467 17.2918 2.56548 16.1188 2.36956 14.5554L1.255 5.66121C1.21208 5.31871 1.45494 5.00627 1.79744 4.96335Z"
+                        fill="#CC312D"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <div class="cart-item-image">
+              <img
+                src="./assets/images/4e1b2b89e1389cadef3f9cefda802e21f0d91497.png"
+                alt="Hugo Just Different"
+              />
+            </div>
+
+            <div class="cart-item-details">
+              <div class="cart-item-header">
+                <div class="cart-item-names">
+                  <p class="cart-item-title">Hugo Just Different</p>
+                  <p class="cart-item-subtitle">هوگو بوس جاست دیفرنت</p>
+                </div>
+                <p class="cart-item-volume">۱۰۰ <span>میل</span></p>
+              </div>
+
+              <div class="cart-item-footer">
+                <p class="cart-item-price">۱,۵۵۰,۰۰۰ <span>تومان</span></p>
+
+                <div class="qty-controls">
+                  <button
+                    type="button"
+                    class="qty-btn qty-btn-increase"
+                    aria-label="افزایش تعداد"
+                  >
+                    <svg
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.6 4.6H8.6M4.6 8.6V0.6"
+                        stroke="#1A1814"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="qty-count">۱</span>
+
+                  <button
+                    type="button"
+                    class="qty-btn qty-btn-remove"
+                    aria-label="حذف از سبد خرید"
+                  >
+                    <svg
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.54182 0C7.16619 0 5.93149 0.901026 5.53369 2.22704L5.51645 2.28449C4.19809 2.43154 2.88783 2.675 1.59627 3.01488L0.466095 3.3123C0.132282 3.40014 -0.0671137 3.74197 0.0207317 4.07578C0.108577 4.40959 0.450399 4.60899 0.784212 4.52114L1.91439 4.22373C6.25872 3.08048 10.8249 3.08048 15.1692 4.22373L16.2994 4.52114C16.6332 4.60899 16.9751 4.40959 17.0629 4.07578C17.1508 3.74197 16.9514 3.40014 16.6175 3.3123L15.4874 3.01488C14.1958 2.675 12.8855 2.43154 11.5672 2.28449L11.55 2.22704C11.1521 0.901026 9.91745 0 8.54182 0ZM10.1658 2.16465C9.83074 1.60903 9.21601 1.25 8.54182 1.25C7.86763 1.25 7.2529 1.60903 6.91783 2.16465C7.99952 2.10017 9.08412 2.10017 10.1658 2.16465Z"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        fill="#CC312D"
+                      />
+                      <path
+                        d="M1.79744 4.96335C2.13994 4.92043 2.45238 5.16328 2.4953 5.50578L3.60986 14.4C3.72741 15.338 4.52493 16.0418 5.47031 16.0418H11.6133C12.5587 16.0418 13.3562 15.338 13.4738 14.4L14.5883 5.50578C14.6313 5.16328 14.9437 4.92043 15.2862 4.96335C15.6287 5.00627 15.8716 5.31871 15.8286 5.66121L14.7141 14.5554C14.5182 16.1188 13.189 17.2918 11.6133 17.2918H5.47031C3.89467 17.2918 2.56548 16.1188 2.36956 14.5554L1.255 5.66121C1.21208 5.31871 1.45494 5.00627 1.79744 4.96335Z"
+                        fill="#CC312D"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <div class="cart-item-image">
+              <img
+                src="./assets/images/87cc61b3c899bf01130d8b31fc1d83376aff5b93.png"
+                alt="Hugo Just Different"
+              />
+            </div>
+
+            <div class="cart-item-details">
+              <div class="cart-item-header">
+                <div class="cart-item-names">
+                  <p class="cart-item-title">Hugo Just Different</p>
+                  <p class="cart-item-subtitle">هوگو بوس جاست دیفرنت</p>
+                </div>
+                <p class="cart-item-volume">۱۰۰ <span>میل</span></p>
+              </div>
+
+              <div class="cart-item-footer">
+                <p class="cart-item-price">۱,۵۵۰,۰۰۰ <span>تومان</span></p>
+
+                <div class="qty-controls">
+                  <button
+                    type="button"
+                    class="qty-btn qty-btn-increase"
+                    aria-label="افزایش تعداد"
+                  >
+                    <svg
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.6 4.6H8.6M4.6 8.6V0.6"
+                        stroke="#1A1814"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="qty-count">۱</span>
+
+                  <button
+                    type="button"
+                    class="qty-btn qty-btn-remove"
+                    aria-label="حذف از سبد خرید"
+                  >
+                    <svg
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.54182 0C7.16619 0 5.93149 0.901026 5.53369 2.22704L5.51645 2.28449C4.19809 2.43154 2.88783 2.675 1.59627 3.01488L0.466095 3.3123C0.132282 3.40014 -0.0671137 3.74197 0.0207317 4.07578C0.108577 4.40959 0.450399 4.60899 0.784212 4.52114L1.91439 4.22373C6.25872 3.08048 10.8249 3.08048 15.1692 4.22373L16.2994 4.52114C16.6332 4.60899 16.9751 4.40959 17.0629 4.07578C17.1508 3.74197 16.9514 3.40014 16.6175 3.3123L15.4874 3.01488C14.1958 2.675 12.8855 2.43154 11.5672 2.28449L11.55 2.22704C11.1521 0.901026 9.91745 0 8.54182 0ZM10.1658 2.16465C9.83074 1.60903 9.21601 1.25 8.54182 1.25C7.86763 1.25 7.2529 1.60903 6.91783 2.16465C7.99952 2.10017 9.08412 2.10017 10.1658 2.16465Z"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        fill="#CC312D"
+                      />
+                      <path
+                        d="M1.79744 4.96335C2.13994 4.92043 2.45238 5.16328 2.4953 5.50578L3.60986 14.4C3.72741 15.338 4.52493 16.0418 5.47031 16.0418H11.6133C12.5587 16.0418 13.3562 15.338 13.4738 14.4L14.5883 5.50578C14.6313 5.16328 14.9437 4.92043 15.2862 4.96335C15.6287 5.00627 15.8716 5.31871 15.8286 5.66121L14.7141 14.5554C14.5182 16.1188 13.189 17.2918 11.6133 17.2918H5.47031C3.89467 17.2918 2.56548 16.1188 2.36956 14.5554L1.255 5.66121C1.21208 5.31871 1.45494 5.00627 1.79744 4.96335Z"
+                        fill="#CC312D"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="invoice-summary">
+          <div class="invoice-row">
+            <span>خرید شما:</span>
+            <span class="invoice-price">۱,۴۵۰,۰۰۰ <small>تومان</small></span>
+          </div>
+
+          <div class="invoice-row">
+            <span>هزینه ارسال:</span>
+            <span class="invoice-price">۰ <small>تومان</small></span>
+          </div>
+
+          <div class="invoice-row invoice-total">
+            <span>مبلغ قابل پرداخت:</span>
+            <span class="total-amount">۸,۴۵۰,۰۰۰ <small>تومان</small></span>
+          </div>
+        </div>
+        <div class="gateway-notice">
+          <div class="gateway-logo">
+            <svg
+              width="24"
+              height="26"
+              viewBox="0 0 24 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.92631 1.11629C9.19909 0.441518 9.8595 4.83402e-05 10.5881 4.83402e-05H22.0807C23.0641 -0.00713003 23.8645 0.78608 23.8681 1.76952C23.8681 1.99923 23.825 2.22534 23.7425 2.43711L14.9418 24.2809C14.669 24.9593 14.0086 25.4007 13.28 25.3971H1.78742C0.803978 25.4007 0.00358919 24.6111 0 23.6277C0 23.398 0.0430704 23.1718 0.125622 22.9601L8.92631 1.11629Z"
+                fill="url(#paint0_linear_36915_179)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_36915_179"
+                  x1="16.7184"
+                  y1="0.0215833"
+                  x2="7.12095"
+                  y2="25.4546"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#FFD60A" />
+                  <stop offset="1" stop-color="#F5BE09" />
+                </linearGradient>
+              </defs>
+              width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.61985 15.2397C11.83 15.2397 15.2397 11.8264 15.2397 7.61985C15.2397 3.41332 11.83 0 7.61985 0C3.40973 0 0 3.41332 0 7.61985C0 11.83 3.40973 15.2397 7.61985 15.2397Z"
+                fill="#0A33FF"
+              />
+            </svg>
+            <p>پرداخت امن با کارت های عضو شتاب از طریق <span>درگاه زیبال</span></p>
+          </div>
+        </div>
+        <button class="checkout-submit-btn">پرداخت و خرید محصولات</button>
+      </aside>
+    </main>
+  </body>
+</html>
